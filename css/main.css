@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+h2 {
+  color: rgb(210,69,30);
+}
+ol li {
+  font-size: 20px;
+}
+ ul li {
+  font-size: 20px;
+}
+p {
+  font-size: 20px;
+}
+.section {
+  height: 100%;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sectionAlt {
+  background: #d3d3d3;
+}
+.hourspay {
+  font-size: 20px;
+  color: rgb(210,69,30);
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #fff;
+  color: black;
+}
+
+#myVideo {
+  /* position: fixed; */
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.circlePhoto {
+  border-radius: 50%;
+  border:3px solid rgb(210,69,30) ;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+ @media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('../img/eva-maria.jpg') black no-repeat top center scroll;
+    max-width: 100%;
+    opacity: .65;
+
+
+  }
+  header video {
+    display: none;
+  }
+  #myBtn {
+    display: none;
+  }
+} 
+
+
+
